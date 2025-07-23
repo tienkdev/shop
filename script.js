@@ -2,10 +2,9 @@ let products = [];
 let swiper;
 
 async function fetchProducts() {
-  const pathParts = window.location.pathname.split("/");
-  let category = pathParts[pathParts.length - 1] || "cute"; // fallback nếu trống
-  if (!category || category === "shop") category = "cute"; // nếu là /shop thì mặc định cute
-  const jsonFile = `${category}.json`;
+    const params = new URLSearchParams(window.location.search);
+    let category = params.get("category") || "cute";
+    const jsonFile = `${category}.json`;
   //const jsonFile = "cute.json";
   try {
     const res = await fetch(jsonFile);
