@@ -212,3 +212,11 @@ h1 {
     width: 80%;
   }
 }
+
+.sponsored {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+  font-style: italic;
+}

@@ -7,7 +7,7 @@ async function fetchProducts() {
    // const jsonFile = `${category}.json`;
   const jsonFile = "cute.json";
   try {
-    const res = await fetch(jsonFile);
+    const res = await fetch(`${jsonFile}?v=${Date.now()}`);
     if (!res.ok) throw new Error("Không tìm thấy file JSON");
     products = await res.json();
     renderProducts(products);
