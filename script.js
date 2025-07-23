@@ -4,8 +4,8 @@ let swiper;
 async function fetchProducts() {
     const params = new URLSearchParams(window.location.search);
     let category = params.get("category");
-    const jsonFile = `${category}.json`;
-  //const jsonFile = "cute.json";
+   // const jsonFile = `${category}.json`;
+  const jsonFile = "cute.json";
   try {
     const res = await fetch(jsonFile);
     if (!res.ok) throw new Error("Không tìm thấy file JSON");
@@ -49,9 +49,9 @@ function showPopup(item) {
     wrapper.appendChild(slide);
   });
 
+  document.getElementById("popup-origin").textContent = item.origin;
   document.getElementById("popup-title").textContent = item.name;
   document.getElementById("popup-price").textContent = item.cost;
-  document.getElementById("popup-desc").textContent = item.origin;
   document.getElementById("popup-link").href = item.link;
 
   document.getElementById("popup").classList.remove("hidden");
