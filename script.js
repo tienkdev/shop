@@ -3,7 +3,7 @@ let swiper;
 
 async function fetchProducts() {
     const params = new URLSearchParams(window.location.search);
-    let category = params.get("category") || "cute";
+    let category = params.get("category");
     const jsonFile = `${category}.json`;
   //const jsonFile = "cute.json";
   try {
