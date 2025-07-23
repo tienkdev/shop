@@ -220,3 +220,45 @@ h1 {
   margin-bottom: 20px;
   font-style: italic;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  .product-card {
+    background: #1e1e1e;
+    color: #f0f0f0;
+  }
+
+  .product-card .price {
+    color: #80caff;
+  }
+
+  .popup-content {
+    background: #1e1e1e;
+    color: #fff;
+  }
+
+  .popup-content a {
+    background: #2196f3;
+    color: #fff;
+  }
+
+  .product-card .sale {
+    background: #ff9800;
+    color: #fff;
+  }
+
+    .product-card .explore {
+    color: #ccc; /* hoặc màu sáng hơn nếu cần */
+    font-weight: bold;
+  }
+  
+  input#search {
+    background: #222;
+    color: #eee;
+    border: 1px solid #444;
+  }
+}
