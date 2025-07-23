@@ -4,8 +4,8 @@ let swiper;
 async function fetchProducts() {
     const params = new URLSearchParams(window.location.search);
     let category = params.get("category");
-   const jsonFile = `${category}.json`;
-  //const jsonFile = "cute.json";
+   //const jsonFile = `${category}.json`;
+  const jsonFile = "cute.json";
   try {
     const res = await fetch(`${jsonFile}?v=${Date.now()}`);
     if (!res.ok) throw new Error("Không tìm thấy file JSON");
