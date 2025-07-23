@@ -32,13 +32,13 @@ h1 {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 16px;
 }
 
-@media (max-width: 399px) {
+@media (max-width: 600px) {
   .product-list {
-    grid-template-columns: repeat(2, 1fr); /* bắt buộc 2 cột */
+    grid-template-columns: repeat(2, 1fr); /* ép 2 cột */
   }
 }
 
@@ -255,7 +255,7 @@ h1 {
     color: #ccc; /* hoặc màu sáng hơn nếu cần */
     font-weight: bold;
   }
-  
+
   input#search {
     background: #222;
     color: #eee;
