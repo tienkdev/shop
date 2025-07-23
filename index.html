@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Shopping</h1>
+    <input type="text" id="search" placeholder="Search" />
+    <div id="product-list" class="product-list"></div>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="close-popup" class="close">&times;</span>
+
+      <div class="slider-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <h2 id="popup-title"></h2>
+      <p id="popup-price"></p>
+      <p id="popup-desc"></p>
+      <a id="popup-link" href="#" target="_blank">Visit Shop</a>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
